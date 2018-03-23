@@ -1,0 +1,245 @@
+body {
+  background-image: url(https://s20.postimg.org/a5w8ma28d/laptop-iphone-notebook-computer-macbook-work-1046491-pxhere.com-.jpg);
+  background-size:cover;
+}
+
+h1 {
+ font-size: 50px;
+ margin-top: 20px;
+ margin-right: 10px;
+ font-family: sans-serif;
+}
+
+h2 {
+  font-size: 40px;
+  margin-top: 12px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+
+.calculator{
+  height: 80%;
+  width: 57%;
+  max-height: 700px;
+  min-height: 500px;
+  max-width: 500px;
+  min-width: 357px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(60, 60, 60);
+  border: solid 2px black;
+  border-radius: 20px;
+  -moz-box-shadow:    inset 0 0 10px #000 d;
+  -webkit-box-shadow: inset 0 0 10px #000;
+  box-shadow:         inset 0 0 10px #000;
+  box-shadow: 1px 1px 1px #000;
+  -moz-box-shadow:    1px 1px 1px #000;
+  -webkit-box-shadow: 1px 1px 1px #000;
+}
+
+.topPart{
+  z-index: 2;
+  position: absolute;
+  left: -1px;
+  width: 100%;
+  height: 20%;
+  background-color: rgb(40, 40, 40);
+  border-radius: 20px;
+  border: solid 2px black;
+}
+
+.screen{
+  height: 60%;
+  width: 84%;
+  position: absolute;
+  top: 30px;
+  left: 8%;
+  background-color: #e4eabc;
+  border-radius: 5px;
+  -moz-box-shadow:    inset 0 0 10px #000;
+  -webkit-box-shadow: inset 0 0 10px #000;
+  box-shadow:         inset 0 0 10px #000;
+  box-shadow: 1px 1px 1px #000;
+  -moz-box-shadow:    1px 1px 1px #000;
+  -webkit-box-shadow: 1px 1px 1px #000;
+  text-align: right;
+  z-index: 5;
+}
+
+.row{
+position: absolute;
+height: 10%;
+width: 100%;
+display: inline;
+}
+
+.doubleRow{
+  position: absolute;
+  height: 23%;
+  width: 100%;
+  display: inline;
+}
+
+.button{
+height: 100%;
+width: 15%;
+position: absolute;
+text-align: center;
+border: solid 1px black;
+border-radius: 5px;
+background-color: rgb(150, 150, 150);
+-moz-box-shadow:    inset 0 0 10px #000;
+-webkit-box-shadow: inset 0 0 10px #000;
+box-shadow:         inset 0 0 10px #000;
+cursor: pointer;
+}
+
+.redButton {
+  background-color: #e02c2c;
+}
+
+.greyButton{
+  background-color: rgb(150, 150, 150)
+}
+
+.halfButton{
+  height: 43%;
+  width: 15%;
+  position: absolute;
+  text-align: center;
+  border: solid 1px black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  -moz-box-shadow:    inset 0 0 10px #000;
+  -webkit-box-shadow: inset 0 0 10px #000;
+  box-shadow:         inset 0 0 10px #000;
+  cursor: pointer;
+}
+
+#row1 {
+  top: 26%;
+}
+
+#row2 {
+  top: 39%;
+}
+
+#row3 {
+  top: 52%;
+}
+
+#row4 {
+  top: 65%;
+}
+
+#off {
+  left: 6%;
+}
+
+#MRC {
+  left: 24%;
+}
+
+#mMinus {
+  left: 42%;
+}
+
+#mPlus {
+  left: 60%;
+}
+
+#divide {
+  left: 77%;
+}
+
+#percent {
+  left: 6%;
+}
+
+#seven {
+  left: 24%;
+}
+
+#eight {
+  left: 42%;
+}
+
+#nine {
+  left: 60%;
+}
+
+#multiply {
+  left: 77%;
+}
+
+#squareRoot {
+left: 6%;
+}
+
+#four {
+  left: 24%;
+}
+
+#five {
+  left: 42%;
+}
+
+#six {
+  left: 60%;
+}
+
+#subtract {
+  left: 77%;
+}
+
+#clear {
+  left: 6%;
+  background-color: #87121;
+}
+
+#one {
+  left: 24%;
+}
+
+#two {
+left: 42%;
+}
+
+#three {
+left: 60%;
+}
+
+#plus {
+left: 77%;
+}
+
+#allClear {
+  left: 6%;
+  bottom: -6%;
+  background-color: #87121;
+}
+
+#zero {
+  left: 24%;
+  bottom: -6%;
+}
+
+#decimal {
+  left: 42%;
+  bottom: -6%;
+}
+
+#equal {
+  left: 60%;
+  bottom: -6%;
+}
+
+#plusText{
+  margin-top: 80%;
+}

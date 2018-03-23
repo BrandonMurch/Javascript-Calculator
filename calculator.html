@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+  @description - a simple javascript calculator to mimic a real world example.
+  @input - based solely on clicking the GUI to use the calculator.
+  @author - Brandon - Brandon.Murch@protonmail.com
+ -->
+  <meta content='text/html;charset=utf-8' http-equiv='Content-Type'>
+  <meta content='utf-8' http-equiv='encoding'>
+  <title>Calculator</title>
+  <link href='calculator.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="calculator">
+    <div class="topPart">
+      <div class="screen" id="screen">
+        <h1>Hello There.</h1>
+      </div>
+    </div>
+    <div class="row" id="row1">
+      <div class="button" id="off">
+        <h3>OFF</h3>
+      </div>
+      <div class="button" id="MRC">
+        <h3>MRC</h3>
+      </div>
+      <div class="button" id="mMinus">
+        <h3>M-</h3>
+      </div>
+      <div class="button" id="mPlus">
+        <h3>M+</h3>
+      </div>
+      <div class="button" id="divide">
+        <h2>&divide;</h2>
+      </div>
+    </div>
+    <div class="row" id="row2">
+      <div class="button" id="percent">
+        <h2>%</h2>
+      </div>
+      <div class="button" id="seven">
+        <h2>7</h2>
+      </div>
+      <div class="button" id="eight">
+        <h2>8</h2>
+      </div>
+      <div class="button" id="nine">
+        <h2>9</h2>
+      </div>
+      <div class="button" id="multiply">
+        <h2>x</h2>
+      </div>
+    </div>
+    <div class="row" id="row3">
+      <div class="button" id="squareRoot">
+        <h2>&#8730;</h2>
+      </div>
+      <div class="button" id="four">
+        <h2>4</h2>
+      </div>
+      <div class="button" id="five">
+        <h2>5</h2>
+      </div>
+      <div class="button" id="six">
+        <h2>6</h2>
+      </div>
+      <div class="button" id="subtract">
+        <h2>-</h2>
+      </div>
+    </div>
+        <!-- a double row to house the larger plus button -->
+    <div class="doubleRow" id="row4">
+      <div class="halfButton redButton" id="clear">
+        <h2>C</h2>
+      </div>
+      <div class="halfButton greyButton" id="one">
+        <h2>1</h2>
+      </div>
+      <div class="halfButton greyButton" id="two">
+        <h2>2</h2>
+      </div>
+      <div class="halfButton greyButton" id="three">
+        <h2>3</h2>
+      </div>
+      <div class="button" id="plus">
+        <h2 id="plusText">+</h2>
+      </div>
+      <div class="halfButton redButton" id="allClear">
+        <h2>AC</h2>
+      </div>
+      <div class="halfButton greyButton" id="zero">
+        <h2>0</h2>
+      </div>
+      <div class="halfButton greyButton" id="decimal">
+        <h2>.</h2>
+      </div>
+      <div class="halfButton greyButton" id="equal">
+        <h2>=</h2>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="calculator.js"></script>
+</body>
+</html>
