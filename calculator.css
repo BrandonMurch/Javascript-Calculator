@@ -1,25 +1,18 @@
-body {
+/*
+
+This document is written in BEM.
+Block = .block
+Element = .block__element
+Modifier = .block__element--modifier || .block--modifier
+
+*/
+
+/* Block ******************************************************************/
+
+.background {
   background-image: url(https://s20.postimg.org/a5w8ma28d/laptop-iphone-notebook-computer-macbook-work-1046491-pxhere.com-.jpg);
   background-size:cover;
 }
-
-h1 {
- font-size: 50px;
- margin-top: 20px;
- margin-right: 10px;
- font-family: sans-serif;
-}
-
-h2 {
-  font-size: 40px;
-  margin-top: 12px;
-}
-
-h3 {
-  font-size: 30px;
-  margin-top: 15px;
-}
-
 
 .calculator{
   height: 80%;
@@ -35,7 +28,7 @@ h3 {
   background-color: rgb(60, 60, 60);
   border: solid 2px black;
   border-radius: 20px;
-  -moz-box-shadow:    inset 0 0 10px #000 d;
+  -moz-box-shadow:    inset 0 0 10px #000;
   -webkit-box-shadow: inset 0 0 10px #000;
   box-shadow:         inset 0 0 10px #000;
   box-shadow: 1px 1px 1px #000;
@@ -43,7 +36,8 @@ h3 {
   -webkit-box-shadow: 1px 1px 1px #000;
 }
 
-.topPart{
+/* Element ****************************************************************/
+.caclulator__topPart{
   z-index: 2;
   position: absolute;
   left: -1px;
@@ -54,7 +48,7 @@ h3 {
   border: solid 2px black;
 }
 
-.screen{
+.calculator__screen{
   height: 60%;
   width: 84%;
   position: absolute;
@@ -62,184 +56,191 @@ h3 {
   left: 8%;
   background-color: #e4eabc;
   border-radius: 5px;
-  -moz-box-shadow:    inset 0 0 10px #000;
   -webkit-box-shadow: inset 0 0 10px #000;
-  box-shadow:         inset 0 0 10px #000;
-  box-shadow: 1px 1px 1px #000;
-  -moz-box-shadow:    1px 1px 1px #000;
+     -moz-box-shadow: inset 0 0 10px #000;
+          box-shadow: inset 0 0 10px #000;
   -webkit-box-shadow: 1px 1px 1px #000;
+     -moz-box-shadow: 1px 1px 1px #000;
+          box-shadow: 1px 1px 1px #000;
   text-align: right;
   z-index: 5;
 }
 
-.row{
+.calculator__row{
 position: absolute;
 height: 10%;
 width: 100%;
 display: inline;
 }
 
-.doubleRow{
-  position: absolute;
-  height: 23%;
-  width: 100%;
-  display: inline;
-}
-
-.button{
+.calculator__button{
 height: 100%;
 width: 15%;
 position: absolute;
 text-align: center;
 border: solid 1px black;
 border-radius: 5px;
-background-color: rgb(150, 150, 150);
--moz-box-shadow:    inset 0 0 10px #000;
 -webkit-box-shadow: inset 0 0 10px #000;
-box-shadow:         inset 0 0 10px #000;
+   -moz-box-shadow: inset 0 0 10px #000;
+        box-shadow: inset 0 0 10px #000;
 cursor: pointer;
 }
 
-.redButton {
-  background-color: #e02c2c;
-}
 
-.greyButton{
-  background-color: rgb(150, 150, 150)
-}
+/* Modifier ***************************************************************/
 
-.halfButton{
-  height: 43%;
-  width: 15%;
-  position: absolute;
-  text-align: center;
-  border: solid 1px black;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  -moz-box-shadow:    inset 0 0 10px #000;
-  -webkit-box-shadow: inset 0 0 10px #000;
-  box-shadow:         inset 0 0 10px #000;
-  cursor: pointer;
-}
-
-#row1 {
+.caclulator__row--One{
   top: 26%;
 }
 
-#row2 {
+.caclulator__row--Two{
   top: 39%;
 }
 
-#row3 {
+.caclulator__row--Three{
   top: 52%;
 }
 
-#row4 {
+.caclulator__row--double{
+  position: absolute;
+  height: 23%;
+  width: 100%;
+  display: inline;
   top: 65%;
 }
 
-#off {
+.calculator__button--half{
+  height: 43%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.calculator__button--grey {
+  background-color: rgb(150, 150, 150);
+}
+
+.calculator__button--red {
+  background-color: #e02c2c;
+}
+
+.calculator__screen--text {
+ font-size: 50px;
+ margin-top: 20px;
+ margin-right: 10px;
+ font-family: sans-serif;
+}
+
+.calculator__button--largeText{
+  font-size: 40px;
+  margin-top: 12px;
+}
+
+.calculator__button--smallText {
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+.calculator__button--off {
   left: 6%;
 }
 
-#MRC {
+.calculator__button--MRC {
   left: 24%;
 }
 
-#mMinus {
+.calculator__button--mMinus {
   left: 42%;
 }
 
-#mPlus {
+.calculator__button--mPlus {
   left: 60%;
 }
 
-#divide {
+.calculator__button--divide {
   left: 77%;
 }
 
-#percent {
+.calculator__button--percent {
   left: 6%;
 }
 
-#seven {
+.calculator__button--seven {
   left: 24%;
 }
 
-#eight {
+.calculator__button--eight {
   left: 42%;
 }
 
-#nine {
+.calculator__button--nine {
   left: 60%;
 }
 
-#multiply {
+.calculator__button--multiply {
   left: 77%;
 }
 
-#squareRoot {
+.calculator__button--squareRoot {
 left: 6%;
 }
 
-#four {
+.calculator__button--four {
   left: 24%;
 }
 
-#five {
+.calculator__button--five {
   left: 42%;
 }
 
-#six {
+.calculator__button--six {
   left: 60%;
 }
 
-#subtract {
+.calculator__button--subtract {
   left: 77%;
 }
 
-#clear {
+.calculator__button--clear {
   left: 6%;
   background-color: #87121;
 }
 
-#one {
+.calculator__button--one {
   left: 24%;
 }
 
-#two {
+.calculator__button--two {
 left: 42%;
 }
 
-#three {
+.calculator__button--three {
 left: 60%;
 }
 
-#plus {
+.calculator__button--plus {
 left: 77%;
 }
 
-#allClear {
+.calculator__button--allClear {
   left: 6%;
   bottom: -6%;
-  background-color: #87121;
 }
 
-#zero {
+.calculator__button--zero {
   left: 24%;
   bottom: -6%;
 }
 
-#decimal {
+.calculator__button--decimal {
   left: 42%;
   bottom: -6%;
 }
 
-#equal {
+.calculator__button--equal {
   left: 60%;
   bottom: -6%;
 }
 
-#plusText{
+.calculator__button--plusText{
   margin-top: 80%;
 }

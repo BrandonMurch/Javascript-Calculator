@@ -2,101 +2,109 @@
 <html>
 <head>
   <!--
-  @description - a simple javascript calculator to mimic a real world example.
-  @input - based solely on clicking the GUI to use the calculator.
-  @author - Brandon - Brandon.Murch@protonmail.com
+  @contact -  Brandon.Murch@protonmail.com
  -->
+ <meta name="author" content="Brandon Murch">
+ <meta name="description" content="a simple javascript calculator to mimic a real world example.">
   <meta content='text/html;charset=utf-8' http-equiv='Content-Type'>
   <meta content='utf-8' http-equiv='encoding'>
   <title>Calculator</title>
   <link href='calculator.css' rel='stylesheet'>
 </head>
-<body>
+<body class="background">
   <div class="calculator">
-    <div class="topPart">
-      <div class="screen" id="screen">
-        <h1>Hello There.</h1>
+    <div class="caclulator__topPart">
+      <div class="calculator__screen" id="screen">
+        <h1 class="calculator__screen--text">Hello There.</h1>
       </div>
     </div>
-    <div class="row" id="row1">
-      <div class="button" id="off">
-        <h3>OFF</h3>
+    <div class="caclulator__row caclulator__rowOne" id="row1">
+      <div class="calculator__button calculator__button--grey calculator__button--off">
+        <h3 class="calculator__button--smallText">OFF</h3>
       </div>
-      <div class="button" id="MRC">
-        <h3>MRC</h3>
+      <div class="calculator__button calculator__button--grey calculator__button--MRC">
+        <h3 class="calculator__button--smallText">MRC</h3>
       </div>
-      <div class="button" id="mMinus">
-        <h3>M-</h3>
+      <div class="calculator__button calculator__button--grey calculator__button--mMinus">
+        <h3 class="calculator__button--smallText">M-</h3>
       </div>
-      <div class="button" id="mPlus">
-        <h3>M+</h3>
+      <div class="calculator__button calculator__button--grey calculator__button--mPlus">
+        <h3 class="calculator__button--smallText">M+</h3>
       </div>
-      <div class="button" id="divide">
-        <h2>&divide;</h2>
-      </div>
-    </div>
-    <div class="row" id="row2">
-      <div class="button" id="percent">
-        <h2>%</h2>
-      </div>
-      <div class="button" id="seven">
-        <h2>7</h2>
-      </div>
-      <div class="button" id="eight">
-        <h2>8</h2>
-      </div>
-      <div class="button" id="nine">
-        <h2>9</h2>
-      </div>
-      <div class="button" id="multiply">
-        <h2>x</h2>
+      <div class="calculator__button calculator__button--grey calculator__button--divide">
+        <h2 class="calculator__button--largeText">&divide;</h2>
       </div>
     </div>
-    <div class="row" id="row3">
-      <div class="button" id="squareRoot">
+    <div class="caclulator__row caclulator__rowTwo" id="row2">
+      <div class="calculator__button calculator__button--grey calculator__button--percent">
+        <h2 class="calculator__button--largeText">%</h2>
+      </div>
+      <div class="calculator__button calculator__button--grey calculator__button--seven">
+        <h2 class="calculator__button--largeText">7</h2>
+      </div>
+      <div class="calculator__button calculator__button--grey calculator__button--eight">
+        <h2 class="calculator__button--largeText">8</h2>
+      </div>
+      <div class="calculator__button calculator__button--grey calculator__button--nine">
+        <h2 class="calculator__button--largeText">9</h2>
+      </div>
+      <div class="calculator__button calculator__button--grey calculator__button--multiply">
+        <h2 class="calculator__button--largeText">x</h2>
+      </div>
+    </div>
+    <div class="caclulator__row caclulator__row--Three" id="row3">
+      <div class="calculator__button calculator__button--grey calculator__button--squareRoot">
         <h2>&#8730;</h2>
       </div>
-      <div class="button" id="four">
-        <h2>4</h2>
+      <div class="calculator__button calculator__button--grey calculator__button--four">
+        <h2 class="calculator__button--largeText">4</h2>
       </div>
-      <div class="button" id="five">
-        <h2>5</h2>
+      <div class="calculator__button calculator__button--grey calculator__button--five">
+        <h2 class="calculator__button--largeText">5</h2>
       </div>
-      <div class="button" id="six">
-        <h2>6</h2>
+      <div class="calculator__button calculator__button--grey calculator__button--six">
+        <h2 class="calculator__button--largeText">6</h2>
       </div>
-      <div class="button" id="subtract">
-        <h2>-</h2>
+      <div class="calculator__button calculator__button--grey calculator__button--subtract">
+        <h2 class="calculator__button--largeText">-</h2>
       </div>
     </div>
         <!-- a double row to house the larger plus button -->
-    <div class="doubleRow" id="row4">
-      <div class="halfButton redButton" id="clear">
-        <h2>C</h2>
+    <div class="caclulator__row caclulator__row--double" id="row4">
+      <div class="calculator__button calculator__button--half
+      calculator__button--red calculator__button--clear">
+        <h2 class="calculator__button--largeText">C</h2>
       </div>
-      <div class="halfButton greyButton" id="one">
-        <h2>1</h2>
+      <div class="calculator__button calculator__button--half
+      calculator__button--grey calculator__button--clear">
+        <h2 class="calculator__button--largeText">1</h2>
       </div>
-      <div class="halfButton greyButton" id="two">
-        <h2>2</h2>
+      <div class="calculator__button calculator__button--half
+      calculator__button--grey calculator__button--two">
+        <h2 class="calculator__button--largeText">2</h2>
       </div>
-      <div class="halfButton greyButton" id="three">
-        <h2>3</h2>
+      <div class="calculator__button calculator__button--half
+      calculator__button--grey calculator__button--three">
+        <h2 class="calculator__button--largeText">3</h2>
       </div>
-      <div class="button" id="plus">
-        <h2 id="plusText">+</h2>
+      <div class="calculator__button calculator__button--grey calculator__button--plus">
+        <h2 class="calculator__button--largeText calculator__plusText">+</h2>
       </div>
-      <div class="halfButton redButton" id="allClear">
-        <h2>AC</h2>
+      <div class="calculator__button calculator__button--half
+      calculator__button--red calculator__button--allClear">
+        <h2 class="calculator__button--largeText">AC</h2>
       </div>
-      <div class="halfButton greyButton" id="zero">
-        <h2>0</h2>
+      <div class="calculator__button calculator__button--half
+      calculator__button--grey calculator__button--zero">
+        <h2 class="calculator__button--largeText">0</h2>
       </div>
-      <div class="halfButton greyButton" id="decimal">
-        <h2>.</h2>
+      <div class="calculator__button calculator__button--half
+      calculator__button--grey calculator__button--decimal">
+        <h2 class="calculator__button--largeText">.</h2>
       </div>
-      <div class="halfButton greyButton" id="equal">
-        <h2>=</h2>
+      <div class="calculator__button calculator__button--half
+      calculator__button--grey calculator__button--equal">
+        <h2 class="calculator__button--largeText">=</h2>
       </div>
     </div>
   </div>

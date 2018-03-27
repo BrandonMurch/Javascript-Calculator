@@ -36,7 +36,7 @@ let operators = { // a object holding the possible operators used in the calcula
 
 
     displayNumber : function(display) { // displays any information to the calculator screen.
-      document.getElementById("screen").innerHTML = '<h1>' + display + ' </h1>';
+      document.getElementsByClassName("calculator__screen--text")[0].innerHTML = display;
     },
 
     clearSome : function() { // same as the C button on the calculator, clears to the last time an equation was completed
@@ -72,8 +72,7 @@ let operators = { // a object holding the possible operators used in the calcula
                     eg. 70 + 5% = 73.5
                     */
     percentage : function(){
-      let displayString = this.screenNum + '&#37';
-      this.displayNumber(displayString);
+      this.displayNumber(this.screenNum + '&#37');
       this.screenNum = operators["percent"](this.calculation[0],this.screenNum);
     },
 
@@ -119,7 +118,7 @@ let operators = { // a object holding the possible operators used in the calcula
                      -  Finally we build the numbers on screen by adding the current
                         number multiplied by 10 to the new number. If the decimal
                         button is pressed, we start building to the right of the
-                        decimal by dividing by 10 to the power of x (decCounter). 
+                        decimal by dividing by 10 to the power of x (decCounter).
 
                     */
     input : function(id, value, posOrNeg){
@@ -166,77 +165,77 @@ let operators = { // a object holding the possible operators used in the calcula
 
        // a series of input listeners for each button on the calculator.
 
-  $(document).on("click","#off",function searchQuery(){
+  $(document).on("click",".calculator__button--off",function searchQuery(){
     calculator.clearAll();
     calculator.displayNumber('');
   });
-  $(document).on("click","#MRC",function searchQuery(){
+  $(document).on("click",".calculator__button--MRC",function searchQuery(){
     calculator.memRecall();
   });
-  $(document).on("click","#mMinus",function searchQuery(){
+  $(document).on("click",".calculator__button--mMinus",function searchQuery(){
     calculator.memMinus();
   });
-  $(document).on("click","#mPlus",function searchQuery(){
+  $(document).on("click",".calculator__button--mPlus",function searchQuery(){
     calculator.memPlus();
   });
-  $(document).on("click","#divide",function searchQuery(){
+  $(document).on("click",".calculator__button--divide",function searchQuery(){
     calculator.input('op', "/");
   });
-  $(document).on("click","#percent",function searchQuery(){
+  $(document).on("click",".calculator__button--percent",function searchQuery(){
     calculator.percentage();
   });
-  $(document).on("click","#seven",function searchQuery(){
+  $(document).on("click",".calculator__button--seven",function searchQuery(){
     calculator.input('num', 7);
   });
-  $(document).on("click","#eight",function searchQuery(){
+  $(document).on("click",".calculator__button--eight",function searchQuery(){
     calculator.input('num', 8);
   });
-  $(document).on("click","#nine",function searchQuery(){
+  $(document).on("click",".calculator__button--nine",function searchQuery(){
     calculator.input('num', 9);
   });
-  $(document).on("click","#multiply",function searchQuery(){
+  $(document).on("click",".calculator__button--multiply",function searchQuery(){
     calculator.input('op', "*");
   });
-  $(document).on("click","#squareRoot",function searchQuery(){
+  $(document).on("click",".calculator__button--squareRoot",function searchQuery(){
     calculator.squareRoot();
   });
-  $(document).on("click","#four",function searchQuery(){
+  $(document).on("click",".calculator__button--four",function searchQuery(){
     calculator.input('num', 4);
   });
-  $(document).on("click","#five",function searchQuery(){
+  $(document).on("click",".calculator__button--five",function searchQuery(){
     calculator.input('num', 5);
   });
-  $(document).on("click","#six",function searchQuery(){
+  $(document).on("click",".calculator__button--six",function searchQuery(){
     calculator.input('num', 6);
   });
-  $(document).on("click","#subtract",function searchQuery(){
+  $(document).on("click",".calculator__button--subtract",function searchQuery(){
     calculator.input('op', "-");
   });
-  $(document).on("click","#clear",function searchQuery(){
+  $(document).on("click",".calculator__button--clear",function searchQuery(){
     calculator.clearSome();
   });
-  $(document).on("click","#one",function searchQuery(){
+  $(document).on("click",".calculator__button--one",function searchQuery(){
     calculator.input('num', 1);
   });
-  $(document).on("click","#two",function searchQuery(){
+  $(document).on("click",".calculator__button--two",function searchQuery(){
     calculator.input('num', 2);
   });
-  $(document).on("click","#three",function searchQuery(){
+  $(document).on("click",".calculator__button--three",function searchQuery(){
     calculator.input('num', 3);
   });
-  $(document).on("click","#plus",function searchQuery(){
+  $(document).on("click",".calculator__button--plus",function searchQuery(){
     calculator.input('op', "+");
   });
-  $(document).on("click","#allClear",function searchQuery(){
+  $(document).on("click",".calculator__button--allClear",function searchQuery(){
     calculator.clearAll();
   });
-  $(document).on("click","#zero",function searchQuery(){
+  $(document).on("click",".calculator__button--zero",function searchQuery(){
     calculator.input('num', 0);
   });
-  $(document).on("click","#decimal",function searchQuery(){
+  $(document).on("click",".calculator__button--decimal",function searchQuery(){
     calculator.decimalActive = false;
   });
-  $(document).on("click","#equal",function searchQuery(){
+  $(document).on("click",".calculator__button--equal",function searchQuery(){
     calculator.input("op", "=");
   });
 });
