@@ -31,13 +31,14 @@ Modifier = .block__element--modifier || .block--modifier
   -moz-box-shadow:    inset 0 0 10px #000;
   -webkit-box-shadow: inset 0 0 10px #000;
   box-shadow:         inset 0 0 10px #000;
-  box-shadow: 1px 1px 1px #000;
-  -moz-box-shadow:    1px 1px 1px #000;
   -webkit-box-shadow: 1px 1px 1px #000;
+     -moz-box-shadow: 1px 1px 1px #000;
+          box-shadow: 1px 1px 1px #000;
 }
 
+
 /* Element ****************************************************************/
-.caclulator__topPart{
+.calculator__topPart{
   z-index: 2;
   position: absolute;
   left: -1px;
@@ -70,7 +71,7 @@ Modifier = .block__element--modifier || .block--modifier
 position: absolute;
 height: 10%;
 width: 100%;
-display: inline;
+display: inline-block;
 }
 
 .calculator__button{
@@ -78,6 +79,7 @@ height: 100%;
 width: 15%;
 position: absolute;
 text-align: center;
+background-color: rgb(150, 150, 150);
 border: solid 1px black;
 border-radius: 5px;
 -webkit-box-shadow: inset 0 0 10px #000;
@@ -89,22 +91,20 @@ cursor: pointer;
 
 /* Modifier ***************************************************************/
 
-.caclulator__row--One{
+.calculator__row--first{
   top: 26%;
 }
 
-.caclulator__row--Two{
+.calculator__row--second{
   top: 39%;
 }
 
-.caclulator__row--Three{
+.calculator__row--three{
   top: 52%;
 }
 
-.caclulator__row--double{
-  position: absolute;
+.calculator__row--double{
   height: 23%;
-  width: 100%;
   display: inline;
   top: 65%;
 }
@@ -115,15 +115,11 @@ cursor: pointer;
   margin-bottom: 10px;
 }
 
-.calculator__button--grey {
-  background-color: rgb(150, 150, 150);
-}
-
 .calculator__button--red {
   background-color: #e02c2c;
 }
 
-.calculator__screen--text {
+.calculator__screenText {
  font-size: 50px;
  margin-top: 20px;
  margin-right: 10px;

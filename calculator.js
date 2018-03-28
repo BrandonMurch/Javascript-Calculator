@@ -36,7 +36,7 @@ let operators = { // a object holding the possible operators used in the calcula
 
 
     displayNumber : function(display) { // displays any information to the calculator screen.
-      document.getElementsByClassName("calculator__screen--text")[0].innerHTML = display;
+      document.getElementsByClassName("calculator__screenText")[0].innerHTML = display;
     },
 
     clearSome : function() { // same as the C button on the calculator, clears to the last time an equation was completed
@@ -57,6 +57,7 @@ let operators = { // a object holding the possible operators used in the calcula
 
     memRecall : function() { // displays the number that is currently in memory
       this.displayNumber(this.memory);
+      this.screenNum = this.memory;
     },
 
     memPlus : function() { // adds the current number to the number in memory
