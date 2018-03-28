@@ -36,6 +36,11 @@ Modifier = .block__element--modifier || .block--modifier
           box-shadow: 1px 1px 1px #000;
 }
 
+.credit {
+  position: absolute;
+  bottom: 5%;
+  left: 10%
+}
 
 /* Element ****************************************************************/
 .calculator__topPart{
